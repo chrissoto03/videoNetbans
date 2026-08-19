@@ -29,15 +29,7 @@ public class ClienteTCP {
             Scanner teclado = new Scanner(System.in);
             String mensaje;
             
-            do {                
-                System.out.println("Escriba un mensaje para el servidor: ");
-                mensaje = teclado.nextLine();
-                
-                salida.println(mensaje);
-                String respuesta = entrada.readLine();
-                System.out.println("Respuesta del servidor: "+respuesta);
-            } while (!mensaje.equalsIgnoreCase("salir"));
-                       
+               
         } catch (Exception e) {
             System.out.println("Error del cliente TCP... " +e.getMessage());
         }
